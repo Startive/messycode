@@ -23,7 +23,9 @@ int main() {
 			odd(num);
 			break;
 		default:
-			cout << "You did not enter a number!" << '\n';	
+			cout << "You did not enter a correct value!" << '\n';
+			system("pause");
+			return 1;
 	
 	}
 
