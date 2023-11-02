@@ -1,15 +1,11 @@
-#include <iostream>
-
 using std::cout, std::getline, std::cin, std::endl, std::ws;
 
-void prime(int num)
+
+bool prime(int num)
 {
 	
 	int i;
-	bool is_prime = true;
-
-	cout << "Enter a number: ";
-	cin >> num;
+	bool is_prime = false;
 
 	// 0 and 1 are not prime numbers
   	if (num == 0 || num == 1) {
@@ -24,21 +20,32 @@ void prime(int num)
     		}
   	}
 
-	if(is_prime)
+	return is_prime;
+
+/*	if(is_prime)
 		cout << num << " is a prime number.";
 	else
 		cout << num << " is not a prime number.";
 
 	cout << '\n';
+*/
 }
 
 
 void odd(int num)
 {
-	cout << "Enter a number: ";
-	cin >> num;
+	//cout << "Enter a number: ";
+	//cin >> num;
 
-	num % 2 ? cout << num << " is an odd number." : cout << num << " is an even.";
+	num % 2 ? cout << num << " is an odd number." : cout << num << " is an even number.";
 	cout << '\n';
+
+}
+
+int test(int num)
+{
+
+	int a = 70;
+	return a * num;
 
 }
